@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo "🔄 Pulling code from GitHub..."
-                checkout scm
+                git branch: 'main', url: 'https://github.com/kobi305/ci_cd_webapp_1.git'
             }
         }
 
